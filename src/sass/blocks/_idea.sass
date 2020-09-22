@@ -1,0 +1,285 @@
+.idea-bg-1 
+  position: absolute
+  top: -150px 
+  left: -300px
+  width: 800px
+  z-index: 3  
+.idea-bg-2
+  position: absolute
+  top: -10px 
+  left: 0
+  // object-fit: cover
+  width: 100%
+  z-index: 1 
+.idea-bg-3
+  position: absolute
+  top: 200px 
+  right: 0
+  width: 90%
+  // object-fit: cover
+  z-index: 4
+.idea-bg-4
+  position: absolute
+  top: 350px 
+  right: 0px
+  // object-fit: cover
+  // width: 
+  z-index: 4
+.idea-bg-5
+  position: absolute
+  top: 28%
+  z-index: 3
+  right: -100px
+.idea-bg-6
+  position: absolute
+  top: 40%
+  z-index: 3
+  left: -150px
+  transform: rotate(-30deg)
+.idea-bg-7
+  position: absolute
+  top: calc(100% - 1100px)
+  z-index: 3
+  right: -100px
+  transform: rotate(-35deg)
+
+.idea 
+  &-btn_mob 
+    display: none
+  .wrap 
+    background-color: #fff
+    padding: 45px 70px
+    padding-bottom: 280px
+    border-radius: 45px
+    box-shadow: 0px 0px 31px rgba(118, 95, 67, 0.15)
+    z-index: 10
+    position: relative
+
+  &-title 
+    font-size: 32px
+    margin-bottom: 45px
+    font-family: 'Rotonda Bold'
+    font-weight: bold
+  &-subtitle 
+    margin-bottom: 5px
+    display: block
+    font-size: 18px
+
+  &-img 
+    border-radius: 30px 
+    width: 100%
+
+  &-info 
+    display: flex
+    align-items: center 
+    justify-content: space-between
+    margin-top: 30px
+    .author 
+      display: flex
+      align-items: center 
+      img 
+        border-radius: 50%
+        width: 50px
+        height: 50px
+        margin-right: 15px
+      span 
+        font-size: 18px
+    .actions
+      display: flex
+      align-items: center
+      justify-content: flex-end
+      .action 
+        color: $primary
+        margin-right: 15px
+        display: block
+        font-size: 16px
+        cursor: pointer
+      img 
+        margin-right: 15px
+        cursor: pointer
+        &:last-child
+          margin-right: 0
+
+  &-buttons 
+    margin-top: 25px
+    display: flex
+    justify-content: flex-start
+    flex-wrap: wrap
+    .btn 
+      margin-right: 15px
+      margin-bottom: 15px
+      &:last-child
+        margin-right: 0
+
+  &-article
+    h2 
+      font-size: 22px
+      color: $text
+      margin-bottom: 10px
+      margin-top: 30px
+
+    p 
+      font-size: 16px
+      margin: 10px 0
+      line-height: 20px
+
+    img 
+      max-width: 100%  
+      margin-top: 20px
+      margin-bottom: 5px
+
+@media ( max-width: 1260px )
+  .idea
+    .wrap
+      padding-bottom: 250px
+
+
+
+@media ( max-width: 1200px )
+  .idea-bg-1 
+    top: -110px 
+    left: -200px
+    width: 600px
+
+  .idea-bg-4
+    top: 270px
+    width: 80%
+
+@media ( max-width: 1040px )
+  .idea
+    .wrap
+      padding-bottom: 210px
+
+@media ( max-width: 1024px )
+  .idea 
+    .wrap
+      padding: 30px 40px
+      padding-bottom: 190px
+      border-radius: 25px
+    &-title 
+      font-size: 26px
+      margin-bottom: 25px
+    &-subtitle 
+      font-size: 16px
+    
+
+@media ( max-width: 860px )
+  .idea 
+    &-bg-2 
+      width: 1350px
+      left: -300px
+    &-bg-3
+      left: -140px
+      width: 1100px
+    &-bg-4
+      top: 320px
+      transform: rotate(-6deg)
+      width: 1000px
+      left: 30px 
+
+    .wrap
+      padding-bottom: 190px
+    &-buttons 
+      .btn 
+        margin-right: 10px
+@media ( max-width: 767px )
+  .idea 
+    order: -1
+    &-bg-1 
+      display: none
+    &-bg-7 
+      display: none
+    .wrap
+      margin-top: 40px
+      padding: 25px 35px
+      margin-bottom: 40px
+    &-title 
+      font-size: 24px
+    &-info 
+      .actions 
+        img 
+          display: none
+        span 
+          padding: 0 10px
+          height: 25px
+          font-family: 'Rotonda Bold'
+          font-weight: bold 
+          border: 2px solid $primary
+          margin: 0
+          border-radius: 50px
+          font-size: 14px
+          line-height: 20px
+
+@media ( max-width: 600px )
+  .idea 
+    &-bg-3 
+      top: 70px
+      left: 0 
+      width: 700px
+    .wrap 
+      position: relative
+      padding: 20px 15px
+      padding-top: 30px
+
+    &-buttons 
+      display: none
+      &.mob 
+        display: flex
+        flex-direction: column 
+        align-items: center
+    &-btn_mob 
+      display: flex
+      position: absolute
+      width: max-content
+      top: 30px
+      right: 35px
+      height: 25px
+      padding: 0 7px
+      font-size: 14px
+      span 
+        margin-right: 4px
+      
+    &-title 
+      font-size: 22px
+    &-subtitle 
+      font-size: 14px
+      width: 100px
+      margin-bottom: 15px
+    &-article 
+      h2 
+        font-size: 20px
+        margin-top: 25px
+
+@media ( max-width: 425px )
+  .idea 
+    &-bg-2 
+      display: block 
+      top: 0
+    .wrap 
+      padding-left: 10px
+      padding-right: 10px
+    &-title 
+      font-size: 20px
+    &-btn_mob 
+      width: max-content
+      white-space: nowrap
+    &-buttons 
+      .btn 
+        margin-right: 0
+        width: 220px
+    &-info 
+      .author 
+        width: 150px
+        img 
+          width: 50px !important
+          min-width: 50px
+          margin-right: 5px
+        span 
+          font-size: 14px
+
+    &-article 
+      h2 
+        font-size: 18px 
+      p 
+        font-size: 14px
+        line-height: 18px

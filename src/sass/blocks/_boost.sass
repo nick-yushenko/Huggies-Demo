@@ -1,0 +1,581 @@
+.boost 
+  margin-bottom: 80px
+  &-bg 
+    display: none
+  &-bg-1 
+    position: absolute
+    top: 70px
+    width: 300px 
+    right: 50px
+  .wrap-fluid 
+    position: relative
+  &-buttons
+    position: absolute
+    top: 0 
+    right: 0
+    display: flex
+    a:first-child 
+      display: none
+      margin-right: 15px
+  &-slider
+    .swiper-wrapper 
+      justify-content: space-between
+    &__next 
+      display: none
+    &__prev 
+      display: none      
+  &-slide 
+    display: flex
+    flex-direction: column 
+    background-color: #fff
+    // box-shadow: 0px 0px 31px rgba(118, 95, 67, 0.15)
+    border-radius: 25px
+    padding-bottom: 20px
+    width: 280px
+    height: 100%
+    margin-right: 30px
+    &:last-of-type
+      margin-right: 0
+    &.empty 
+      display: none
+    &_primary 
+      background-color: $primary
+      display: flex
+      flex-direction: column 
+      align-items: center
+      justify-content: space-around
+      &:hover
+        .boost-slide__add 
+          transform: scale(1.03)
+          transition: 0.3s
+
+    &__add 
+      transition: 0.3s
+      cursor: pointer
+      
+
+    &__share 
+      color: #ffffff !important
+      font-size: 16px
+      font-family: 'Rotonda Bold'
+      font-weight: bold
+      padding: 0 15px
+      text-align: center
+    &__img 
+      border-radius: 25px 
+      width: 100% 
+      height: 240px
+      object-fit: cover
+      object-position: center 
+      margin-bottom: 25px
+
+    &__name
+      font-size: 22px
+      font-family: 'Rotonda Bold'
+      font-weight: bold
+      margin-bottom: 15px
+      padding: 0 20px
+      display: block
+    &__author 
+      display: block
+      color: #989A9C
+      padding: 0 20px
+      font-size: 16px
+
+    &:nth-of-type(2)
+      width: 160px
+      height: 240px
+
+      .boost-slide
+
+        &__img 
+          height: 130px
+          margin-bottom: 20px
+        &__name 
+          padding: 0 15px
+          font-size: 15px
+          margin-bottom: 5px
+        &__author 
+          font-size: 14px
+          padding: 0 15px
+    &:nth-of-type(3)
+      width: 230px
+      height: 300px
+      .boost-slide
+
+        &__img 
+          height: 170px
+          margin-bottom: 20px
+        &__name 
+          font-size: 18px
+          margin-bottom: 10px
+        &__author 
+          font-size: 14px
+    &:nth-of-type(5)
+      width: 230px
+      height: 300px
+
+      .boost-slide
+
+        &__img 
+          height: 170px
+          margin-bottom: 20px
+        &__name 
+          font-size: 18px
+          margin-bottom: 10px
+        &__author 
+          font-size: 14px
+    &:nth-of-type(6)
+      width: 160px
+      height: 240px
+      .boost-slide
+
+        &__img 
+          height: 130px
+          margin-bottom: 20px
+        &__name 
+          padding: 0 15px
+          font-size: 15px
+          margin-bottom: 5px
+        &__author 
+          font-size: 14px
+          padding: 0 15px
+
+@media ( max-width: 1260px )
+  .boost 
+    &-slide 
+      margin-right: 15px
+      width: 230px
+      &__name 
+        font-size: 20px
+        margin-bottom: 15px
+      &__img 
+        margin-bottom: 17px
+      &:nth-of-type(2)
+        width: 150px
+        height: 235px
+        .boost-slide
+
+          &__img 
+            height: 125px
+            margin-bottom: 20px
+          &__name 
+            font-size: 14px
+          &__author 
+            font-size: 13px
+      &:nth-of-type(3)
+        width: 200px
+        height: 265px
+
+        .boost-slide
+
+          &__img 
+            height: 160px
+          &__name 
+            padding: 0 15px
+            font-size: 16px
+          &__author 
+            padding: 0 15px
+            font-size: 14px
+
+      &:nth-of-type(5)
+        width: 200px
+        height: 265px
+        .boost-slide
+
+          &__img 
+            height: 160px
+          &__name 
+            padding: 0 15px
+            font-size: 16px
+          &__author 
+            padding: 0 15px
+            font-size: 14px
+      &:nth-of-type(6)
+        width: 150px
+        height: 235px
+        .boost-slide
+
+          &__img 
+            height: 130px
+            margin-bottom: 20px
+          &__name 
+            padding: 0 15px
+            font-size: 15px
+            margin-bottom: 5px
+          &__author 
+            font-size: 14px
+            padding: 0 15px
+
+@media ( max-width: 1100px )
+  .boost 
+    &-slide 
+      // margin-right: 15px
+      width: 220px
+      &__name 
+        font-size: 18px
+        margin-bottom: 15px
+      &__img 
+        margin-bottom: 17px
+      &__author 
+        font-size: 14px
+      &:nth-of-type(2)
+        width: 145px
+        height: 235px
+        .boost-slide
+
+          &__img 
+            height: 125px
+            margin-bottom: 20px
+          &__name 
+            font-size: 14px
+          &__author 
+            font-size: 13px
+      &:nth-of-type(3)
+        width: 185px
+        height: 265px
+
+        .boost-slide
+
+          &__img 
+            height: 160px
+          &__name 
+            padding: 0 15px
+            font-size: 16px
+          &__author 
+            padding: 0 15px
+            font-size: 14px
+
+      &:nth-of-type(5)
+        width: 200px
+        height: 265px
+        .boost-slide
+
+          &__img 
+            height: 160px
+          &__name 
+            padding: 0 15px
+            font-size: 16px
+          &__author 
+            padding: 0 15px
+            font-size: 14px
+      &:nth-of-type(6)
+        width: 150px
+        height: 235px
+        .boost-slide
+
+          &__img 
+            height: 130px
+            margin-bottom: 20px
+          &__name 
+            padding: 0 15px
+            font-size: 15px
+            margin-bottom: 5px
+          &__author 
+            font-size: 14px
+            padding: 0 15px
+
+@media ( max-width: 1024px )
+  .boost 
+    &-bg-1 
+      top: 70px
+      width: 200px 
+      right: 50px
+      display: none 
+
+    .gift-title 
+      width: 350px
+    &-buttons
+      a:first-child 
+        display: flex
+        align-items: center 
+        padding: 0 15px
+    &-slider 
+      width: 705px
+      height: 300px
+      &__next 
+        display: flex
+        align-items: center
+        justify-content: center
+        height: 50px
+        width: 50px
+        transform: rotate(180deg)
+        opacity: 0.3
+        transition: 0.3s
+        &.clickable
+          transition: 0.3s
+          opacity: 1
+        
+      &__prev
+        display: flex
+        align-items: center
+        justify-content: center
+        height: 50px
+        width: 50px
+        opacity: 0.3
+        transition: 0.3s
+        &.clickable
+          transition: 0.3s
+          opacity: 1
+    &-wrap 
+      display: flex
+      align-items: center
+    &-slide 
+      margin-right: 15px
+      margin-left: 15px
+      width: 200px !important
+      height: 230px !important
+      border-radius: 20px
+      transition: 0.3s
+      &.empty 
+        display: block
+        background-color: transparent
+
+
+      &__name 
+        font-size: 14px !important
+        padding: 0 15px !important
+        margin-bottom: 13px !important
+        transition: 0.3s
+
+      &__author 
+        padding: 0 15px !important
+        font-size: 12px !important
+        transition: 0.3s
+
+
+      &__img 
+        transition: 0.3s
+        border-radius: 20px
+        height: 130px !important
+        margin-bottom: 15px !important
+      &:nth-of-type(6)
+        display: none
+      &.current 
+ 
+        transition: 0.3s
+        width: 215px !important
+        height: 300px !important
+        .boost-slide 
+          transition: 0.3s
+          &__img 
+            transition: 0.3s
+            height: 180px !important
+          &__name 
+            transition: 0.3s
+            font-size: 18px !important
+          &__author 
+            transition: 0.3s
+            font-size: 14px !important
+   
+@media  ( max-width: 880px  )
+  .boost 
+    .gift-title 
+      width: 300px
+    &-slider 
+      width: calc(100% - 80px)
+      height: 300px
+      &__next 
+        height: 40px
+        width: 40px
+      &__prev
+        height: 40px
+        width: 40px
+    &-wrap 
+      display: flex
+      align-items: center
+    &-slide 
+      margin: 0 20px
+      width: 190px !important
+      height: max-content !important
+      border-radius: 15px
+
+      &__name 
+        font-size: 11px !important
+        padding: 0 10px !important
+
+
+      &__author 
+        padding: 0 10px !important
+        font-size: 12px !important
+      &__img 
+        border-radius: 15px
+        height: 120px !important
+      &.current 
+        width: 205px !important
+        height: max-content !important
+
+        .boost-slide 
+          transition: 0.3s
+          &__img 
+            transition: 0.3s
+            height: 160px !important
+          &__name 
+            transition: 0.3s
+            font-size: 16px !important
+          &__author 
+            transition: 0.3s
+            font-size: 14px !important
+
+@media ( max-width: 850px )
+  .boost 
+    &-slide 
+      margin: 0 15px
+
+@media ( max-width: 820px )
+  .boost 
+    &-slider
+      width: calc(100% - 60px)
+      height: 300px
+      &__next 
+        height: 35px
+        width: 35px
+      &__prev
+        height: 30px
+        width: 30px
+
+
+@media ( max-width: 800px )
+  .boost 
+    &-slide 
+      margin: 0 17px
+    &-slide 
+      width: 180px !important
+      border-radius: 15px
+      &__name
+        font-size: 11px !important
+        &__author
+          padding: 0 10px !important
+          font-size: 12px !important
+          &__img 
+            border-radius: 15px
+            height: 120px !important
+          &.current 
+            width: 195px !important
+            height: max-content !important
+
+            .boost-slide 
+              transition: 0.3s
+              &__img 
+                transition: 0.3s
+                height: 160px !important
+              &__name 
+                transition: 0.3s
+                font-size: 16px !important
+              &__author 
+                transition: 0.3s
+                font-size: 14px !important
+
+@media ( max-width: 790px )
+  .boost 
+    &-slide 
+      margin: 0 12px
+
+@media ( max-width: 768px )
+  .boost 
+    &-bg-1
+      display: none 
+    .gift-title 
+      text-align: center
+      padding: 0 20px
+      width: 100%
+
+    &-buttons 
+      position: relative
+      margin: 0 auto
+      width: max-content
+
+    &-wrap 
+      display: flex
+      align-items: center
+      justify-content: center
+      position: relative
+    &-bg 
+      position: absolute
+      top: 0px 
+      left: -100px
+      width: 1000px
+      display: block
+    &-slider 
+      margin: 0 20px
+      width: 280px
+      &__next 
+        z-index: 1
+      &__prev 
+        z-index: 1
+    &-slide 
+      width: 280px !important
+      height: 250px  !important
+      margin: 0
+      &__img 
+        height: 150px !important
+      &__name 
+        font-size: 16px !important
+      &__author 
+        font-size: 14px !important
+      &.empty 
+        display: none
+      &.current 
+        width: 280px !important
+        height: 250px !important
+        .boost-slide 
+          &__img 
+            height: 150px !important
+
+
+@media (max-width: 425px  )
+  .boost
+    .gift-title 
+      text-align: left
+      width: 250px 
+    &-bg 
+
+      width: 850px
+      top: 50px
+      left: -250px
+    .wrap-fluid 
+      width: 100% 
+    &-buttons 
+      display: flex
+      flex-direction: column
+      .btn 
+        width: 100%
+        margin-bottom: 10px
+    &-wrap 
+      margin-bottom: 20px
+    &-slider 
+      height: 250px
+      width: 100%
+      margin: 0
+      display: flex
+      justify-content: center
+      .swiper-wrapper 
+      &__next 
+        display: none
+      &__prev 
+        display: none
+    &-slide 
+      width: 280px !important
+      margin:  0 10px
+      &.current 
+        width: 280px !important
+
+  
+@media (max-width: 375px  )
+  .boost
+    &-slider 
+      height: 250px
+      width: 100%
+      margin: 0
+      display: flex
+      justify-content: center
+      .swiper-wrapper 
+      &__next 
+        display: none
+      &__prev 
+        display: none
+    &-slide 
+      width: 240px !important
+      margin:  0 5px
+      &.current 
+        width: 240px !important

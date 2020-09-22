@@ -1,0 +1,278 @@
+.project 
+  padding-bottom: 400px
+  position: relative
+  padding-top: 180px
+  margin-top: -130px
+  overflow: hidden
+  .wrap-fluid 
+    display: flex
+    position: relative
+    justify-content: space-between
+    
+  &-bg 
+    position: absolute
+    top: 0px
+    left: -130px
+    width: 1880px
+    overflow: hidden
+  &-bg-1 
+    position: absolute
+    top: 240px
+    left: -200px
+    //
+    //
+  &-img 
+    position: absolute
+    bottom: 300px
+    z-index: 1
+    width: 700px
+  &-mask 
+    z-index: 2
+    opacity: 1
+    position: absolute
+    top: 380px
+    left: -450px
+    width: 2550px
+  &-descr 
+    z-index: 2
+    margin-left: auto
+    width: 50%
+  &-title
+    font-size: 40px
+    font-family: 'Rotonda Bold'
+    font-weight: bold
+    margin-bottom: 20px
+
+  &-text 
+    font-family: 'Rotonda Regular'
+    font-size: 25px
+    margin-bottom: 35px
+
+  &-ul 
+    list-style: none
+
+  &-li 
+    padding-left: 30px
+    font-family: 'Rotonda Regular'
+    font-size: 18px
+    margin-bottom: 15px
+    position: relative
+    width: 400px
+    &::before
+      position: absolute
+      top: 5px
+      left: 0 
+      content: ''
+      width: 16px
+      height: 16px
+      border-radius: 50px
+      background-color: $primary
+
+  &-buttons
+    margin-top: 35px
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    .btn 
+      margin-right: 50px
+  &-download 
+    text-decoration: underline
+    color: $primary
+    font-size: 16px
+    display: block
+    font-family: 'Rotonda Bold'
+
+@media  ( max-width: 1260px  )
+  .project 
+    // &-img 
+    //   bottom: 180px
+    &-descr 
+      width: 45%
+    &-title 
+      font-size: 34px
+    &-text 
+      font-size: 20px
+
+@media  ( max-width: 1160px  )
+  .project 
+    &-descr 
+      width: 350px
+    &-title 
+      font-size: 24px
+    &-text 
+      font-size: 16px
+    &-li 
+      font-size: 14px
+      width: 100% 
+    &-buttons 
+      display: flex
+      flex-direction: column
+      .btn 
+        width: 100%
+        margin: 0
+        margin-bottom: 20px
+
+
+@media  ( max-width: 1024px  )
+  .project 
+
+    margin-top: -100px
+    padding-top: 150px
+    margin-bottom: -100px
+    &-bg-1 
+      position: absolute
+      top: 240px
+      left: -150px
+      width: 600px
+    &-img 
+      width: 550px
+      bottom: 325px
+    &-bg 
+      width: 1600px
+    &-mask 
+      top: 300px
+
+@media  ( max-width: 860px  )
+  .project 
+    margin-top: -80px
+    padding-top: 120px
+    margin-bottom: -200px
+    &-img 
+      width: 450px
+      bottom: 390px
+    &-bg 
+      width: 1400px
+    &-mask 
+      top: 240px
+    &-bg-1 
+      top: 240px
+      left: -150px
+      width: 500px
+
+
+@media  ( max-width: 760px  )
+  .project
+    margin-bottom: -240px 
+    &-img 
+      width: 350px
+    &-bg-1 
+      top: 280px
+      left: -200px
+      width: 500px
+
+
+@media  ( max-width: 670px )
+  .project
+    margin-bottom: 0 
+    margin-top: -180px
+    padding-top: 240px
+    &-bg-1 
+      top: 650px
+      left: -50px
+      width: 500px
+
+    &-title 
+      font-size: 22px
+    &-img 
+      width: 450px
+      top: 530px
+      left: 0px
+    &-bg 
+      top: 100px
+      width: 1800px
+      left: -500px
+      transform: rotate(-20deg)
+    &-mask 
+      width: 1500px
+      top: 620px
+      left: -330px
+      transform: rotate(-20deg)
+
+    &-descr 
+      width: 100%
+    &-buttons 
+      .btn 
+        width: 200px
+        font-size: 14px
+    &-download
+      height: 35px
+      text-decoration: none
+      border: 2px solid $primary
+      border-radius: 50px
+      display: flex
+      align-items: center
+      justify-content: center
+      font-size: 14px
+      width: 200px
+
+@media  ( max-width: 600px )
+  .project
+    padding-top: 240px
+    margin-top: -150px
+    
+
+@media  ( max-width: 500px )
+  .project 
+    // margin-bottom: -30px
+
+    margin-top: -70px
+    padding-top: 200px
+    margin-bottom: 50px
+    &-title 
+      font-size: 20px
+    &-img 
+      top: 530px
+      left: 0
+      width: 115%
+    &-bg 
+      top: 170px
+      width: 1800px
+      left: -640px
+      transform: rotate(14deg)
+    &-mask 
+      width: 1500px
+      top: 720px
+      opacity: 1
+      left: -335px
+      transform: rotate(0deg)
+    &-li 
+      padding-left: 20px
+      &::before
+        width: 10px
+        height: 10px
+
+@media  ( max-width: 425px )
+  .project 
+    margin-bottom: 0
+    // margin-bottom: -40px
+    
+    &-img 
+      width: 120%
+      top: 530px
+    &-mask 
+      top: 720px
+      transform: rotate(0deg)
+
+
+
+
+@media  ( max-width: 376px )
+  .project 
+    padding-top: 180px
+    &-img 
+      top: 600px
+      width: 400px
+    &-mask 
+      width: 1500px
+      top: 710px
+      opacity: 1
+      left: -335px
+      transform: rotate(0deg)
+    // margin-bottom: -80px
+
+@media  ( max-width: 340px )
+  .project 
+    padding-top: 180px
+    &-img 
+      top: 59 0px
+      width: 380px

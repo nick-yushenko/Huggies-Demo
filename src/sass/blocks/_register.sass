@@ -1,0 +1,166 @@
+.main 
+  &_register 
+    padding-bottom: 0
+  
+.register 
+  padding: 30px 0
+  min-height: calc(100vh - 70px)
+  background-color:  #FFEFE1
+  position: relative
+  &-bg-1
+    position: absolute
+    width: 2000px
+    bottom: -940px
+    left: -240px
+    z-index: 1
+  &-bg-2
+    position: absolute
+    width: 1800px
+    top: 30px
+    left: -400px
+  .wrap-fluid 
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    position: relative
+    z-index: 3
+  .info-name 
+    margin-top: 30px
+  .logo 
+    display: flex
+    align-items: center 
+    margin-top: 30px
+    img 
+      transform: translateZ(0)
+      &:first-child
+        width: 65px
+        margin-right: 10px
+      &:last-child
+        margin-left: 5px
+        width: 145px
+
+  &-form 
+    margin: auto
+    margin-top: -100px
+    padding: 80px
+    background-color: #fff
+    box-shadow: 0px 0px 31px rgba(118, 95, 67, 0.15)
+    border-radius: 30px
+    width: 580px
+    z-index: 3
+    position: relative
+    .input 
+      width: 100%
+      margin-bottom: 15px
+    
+    input[type="submit"]
+      width: 100%
+      margin-top: 15px
+
+    .checkbox 
+      .checkbox__text 
+        margin: 20px 
+        margin-bottom: 0
+
+  &-title 
+    font-size: 30px
+    text-align: center
+    color: $primary
+    margin-bottom: 25px
+    font-family: 'Rotonda Bold'
+    font-weight: bold
+
+
+@media ( max-width: 1260px )
+  .register 
+    .wrap-fluid 
+      align-items: center
+    .logo 
+      margin-top: 0
+      img 
+        &:first-child
+          width: 80px
+          margin-right: 10px
+        &:last-child
+          margin-left: 5px
+          width: 160px
+    .info-name 
+      margin-top: 0
+    &-form 
+      margin-top: 30px
+
+
+@media ( max-width: 768px )
+  .register 
+    padding-bottom: 100px
+    &-title 
+      font-size: 26px
+    &-bg-1
+      left: -500px
+    &-form 
+      padding: 60px
+      border-radius: 30px
+
+@media ( max-width: 600px )
+  .register 
+    display: flex
+    flex-direction: column-reverse
+    &-bg-2 
+      top: -20px 
+      left: -240px
+    &-title 
+      font-size: 20px
+
+    .logo
+      display: flex
+      flex-direction: column 
+      span 
+        display: none 
+      img 
+        &:first-child
+          width: 90px
+          margin: 0
+          margin-bottom: 10px
+        &:last-child
+          margin: 0
+          width: 100px
+        
+    &-bg-1 
+      width: 800px
+      top: 100px
+      left: -70px
+
+    &-form 
+      width: 90%
+      margin-bottom: 40px
+      margin-top: 0
+      border-radius: 15px 
+      padding: 25px 35px
+
+      .checkbox 
+        .checkbox__text 
+          margin: 0
+          margin-top: 15px
+
+@media ( max-width: 500px )
+  .register 
+    &-bg-2 
+      top: -20px 
+      left: -350px
+@media ( max-width: 425px )
+  .register 
+    &-bg-1 
+      width: 800px
+      top: 100px
+      left: -70px
+    &-bg-2 
+      width: 1700px
+      top: 50px 
+      left: -360px
+
+@media ( max-width: 375px )
+  .register 
+    &-bg-2 
+      width: 1700px
+      top: -100px 
+      left: -360px

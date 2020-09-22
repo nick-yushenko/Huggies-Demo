@@ -1,0 +1,207 @@
+.gift
+  margin-bottom: 80px
+  position: relative
+  z-index: 5
+  &-title 
+    font-size: 40px
+    font-family: 'Rotonda Bold'
+    font-weight: bold
+    margin-bottom: 60px
+
+  &-wrap 
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+
+  &-block 
+    width: 320px
+
+    &__title 
+      font-size: 30px
+      font-family: 'Rotonda Bold'
+      font-weight: bold
+      margin-bottom: 25px
+      width: 220px
+    &__ul 
+      list-style: none
+
+    &__li 
+      padding-left: 30px
+      font-family: 'Rotonda Regular'
+      font-size: 20px
+      margin-bottom: 15px
+      position: relative
+      &::before
+        position: absolute
+        top: 5px
+        left: 0 
+        content: ''
+        width: 16px
+        height: 16px
+        border-radius: 50px
+        background-color: $primary
+      .primary 
+        font-family: 'Rotonda Bold'
+        font-weight: bold
+
+  &-img 
+    display: flex
+    flex-direction: column 
+    align-items: center
+    margin-top: -30px
+    width: calc(100% - 650px)
+    img 
+      width: 100%
+      margin-bottom: 10px
+  
+  &-more
+    font-size: 16px
+    font-family: 'Rotonda Bold'
+    font-weight: bold 
+    color: $primary 
+    text-decoration: underline
+    &_mob 
+      display: none
+
+
+@media ( max-width: 1260px )
+  .gift 
+    &-title 
+      font-size: 36px
+    &-img 
+      width: calc(100% - 600px)
+
+    &-block 
+      width: 290px
+      &__title 
+        width: 200px
+        font-size: 28px
+      &__li 
+        font-size: 18px
+
+
+@media ( max-width: 1100px )
+  .gift 
+    &-title 
+      font-size: 32px
+    &-img 
+      width: calc(100% - 550px)
+
+    &-block 
+      width: 250px
+      &__title 
+        width: 170px
+        font-size: 24px
+        margin-bottom: 20px
+      &__li 
+        margin-bottom: 10px
+        font-size: 16px
+
+@media ( max-width: 1024px )
+  .gift 
+    &-title 
+      font-size: 28px
+      margin-bottom: 40px
+    &-img 
+      margin-top: -20px
+      width: calc(100% - 440px)
+
+    &-block 
+      width: 210px
+      &__title 
+        width: 170px
+        font-size: 24px
+        margin-bottom: 20px
+      &__li 
+        font-size: 14px
+        padding-left: 20px
+        &::before
+          width: 14px
+          height: 14px
+
+    &-more 
+      font-size: 14px
+
+
+@media ( max-width: 860px )
+  .gift 
+    &-title 
+      font-size: 24px
+      margin-bottom: 40px
+    &-img 
+      margin-top: -20px
+      width: calc(100% - 400px)
+
+    &-block 
+      width: 190px
+      &__title 
+        width: 150px
+        font-size: 20px
+        margin-bottom: 15px
+      &__li 
+        font-size: 13px
+        padding-left: 17px
+        &::before
+          width: 10px 
+          height: 10px 
+
+    &-more 
+      font-size: 14px
+      
+
+
+@media ( max-width: 768px )
+  .gift 
+    &-title 
+      text-align: center
+    &-wrap 
+      flex-direction: column
+      align-items: center
+    &-img 
+      margin: 20px 0
+      width: 300px
+    &-block 
+      width: 400px
+      &__title 
+        text-align: center
+        width: 100%
+      &__li 
+        font-size: 14px
+    &-more 
+      display: none 
+      &_mob
+        font-size: 14px
+        font-family: 'Rotonda Bold'
+        font-weight: bold 
+        color: $primary 
+        text-decoration: underline
+        display: block !important
+        margin-top: 15px
+
+
+@media ( max-width: 425px )
+  .gift 
+    &-title 
+      text-align: left 
+      font-size: 20px
+      margin-bottom: 20px
+  
+    &-img 
+      width: 300px
+    &-block 
+      width: 100%
+      &__title 
+        width: 100%
+        text-align: left
+      &__li 
+        font-size: 16px
+    &-more 
+      display: none 
+      &_mob
+        font-size: 14px
+        font-family: 'Rotonda Bold'
+        font-weight: bold 
+        color: $primary 
+        text-decoration: underline
+        display: block !important
+        margin-top: 15px

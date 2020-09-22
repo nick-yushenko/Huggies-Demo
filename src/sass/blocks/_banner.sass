@@ -1,0 +1,605 @@
+.banner 
+  position: relative
+  margin-bottom: 100px
+  .wrap-fluid 
+    padding-top: 100px
+    display: flex
+    justify-content: space-between
+    z-index: 1
+    position: relative
+  &-bg 
+    position: absolute
+    top: -250px
+    left: -320px
+    width: 2200px
+    &_mob 
+      display: none
+
+  &-logo 
+    display: none
+  &-mob 
+    display: none
+    &__img 
+      display: none
+  &-bg-1 
+    position: absolute
+    width: 900px
+    top: -30px
+    left: -200px
+    transform: rotate(-2deg)
+  &-bg-2
+    position: absolute
+    top: -350px
+    left: -220px
+    transform: rotate(-2deg)
+  &-bg-3
+    position: absolute
+    width: 850px
+    top: -190px
+    right: -100px
+  &-bg-4
+    position: absolute
+    width: 590px
+    top: 0px
+    right: -10px
+    transform: rotate(5deg)
+  &-arrow-1 
+    position: absolute
+    bottom: 110px
+    left: 160px
+  &-arrow-2
+    position: absolute
+    bottom: 90px
+    right: 200px
+  &-block 
+    position: relative
+    width: 300px
+    .btn 
+      width: 210px
+      margin-top: 25px
+
+    &__icon 
+      position: absolute
+      top: 8px
+      left: 2px
+    &__title 
+      color: $primary 
+      padding-left: 60px
+      font-size: 30px
+      font-family: 'Rotonda Bold'
+      font-weight: bold
+      margin-bottom: 20px
+      width: 250px
+    &__text 
+      font-size: 20px
+      width: 240px
+      display: block
+      font-family: 'Rotonda Bold'
+      font-weight: bold
+      margin-bottom: 15px
+    &__ul 
+      list-style: none
+      margin-top: 15px
+    &__li 
+      padding-left: 30px
+      font-family: 'Rotonda Regular'
+      font-size: 16px
+      margin-bottom: 15px
+      position: relative
+      color: $text
+      .primary 
+        font-family: 'Rotonda Bold'
+        font-weight: bold
+      &::before
+        position: absolute
+        top: 5px
+        left: 0 
+        content: ''
+        width: 16px
+        height: 16px
+        border-radius: 50px
+        background-color: $primary
+
+  &-card 
+    position: relative
+    padding-top: 0px
+    margin-top: -90px
+    &__img 
+      width: 450px
+      margin: 0 auto
+      margin-left: 0px
+    &__block
+      width: 480px
+      z-index: 1
+      position: relative
+      margin-top: -180px
+      border-radius: 45px
+      background-color: $primary
+      padding-bottom: 20px
+      .btn 
+        position: relative
+        border-color: #fff
+        color: #fff
+        margin: auto
+        width: 200px
+    &__bg 
+      width: 482px
+      margin-top: -1px
+      margin-left: -1px
+      border-radius: 45px
+    &__logo 
+      display: flex
+      align-items: center
+      position: absolute
+      top: 20px
+      left: 75px
+      img:nth-of-type(1)
+        margin-right: 15px
+        width: 100px
+      img:nth-of-type(2)
+        width: 200px
+        margin-left: 10px
+      span 
+        font-size: 20px
+        font-family: 'Rotonda Bold'
+        font-weight: bold
+    &__name 
+      span:nth-of-type(1)
+        font-size: 48px
+        display: block
+        color: #ffffff
+        font-family: 'Rotonda Bold'
+        text-align: center
+        margin-bottom: 10px
+      span:nth-of-type(2)
+        font-size: 23px
+        display: block
+        color: #ffffff
+        font-family: 'Rotonda Bold'
+        text-align: center
+        margin-bottom: 20px
+        
+
+
+@media ( max-width: 1400px )
+  .banner 
+    &-bg-2 
+      left: -300px
+    &-bg-4 
+      top: -25px
+      right: -40px
+
+@media ( max-width: 1260px )
+  .banner 
+    &-bg-1 
+      width: 800px
+      top: -10px
+    &-bg-3 
+      width: 900px
+      top: -210px
+      right: -230px
+    &-bg-4 
+      width: 620px
+      top: -15px
+      right: -40px
+    &-arrow-1 
+      bottom: 80px
+      left: 100px
+    &-arrow-2
+      bottom: 40px
+      right: 170px
+    &-card 
+      &__logo 
+        width: 290px
+        left: calc(50% - 145px)
+        img:nth-of-type(1)
+          margin-right: 15px
+          width: 90px
+        img:nth-of-type(2)
+          width: 160px
+          margin-left: 10px
+        span 
+          font-size: 20px
+          font-family: 'Rotonda Bold'
+      &__name 
+        span:nth-of-type(1)
+          font-size: 46px
+        span:nth-of-type(2)
+          font-size: 20px
+      &__block 
+        width: 420px
+      &__bg 
+        width: 422px
+
+@media ( max-width: 1100px )
+  .banner 
+    &-bg 
+      left: -430px
+    &-bg-2 
+      top: -360px
+    &-bg-3 
+      width: 900px
+      top: -210px
+      right: -330px
+    &-bg-4 
+      width: 620px
+      top: -15px
+      right: -150px
+
+    &-card 
+      &__logo 
+        width: 246px
+        left: calc(50% - 123px)
+        img:nth-of-type(1)
+          margin-right: 15px
+          width: 70px
+        img:nth-of-type(2)
+          width: 140px
+          margin-left: 10px
+        span 
+          font-size: 16px
+          font-family: 'Rotonda Bold'
+      &__name 
+
+        span:nth-of-type(1)
+          font-size: 40px
+        span:nth-of-type(2)
+          font-size: 18px
+
+
+    &-block 
+      .btn 
+        margin-top: 15px
+      &__icon 
+        width: 40px
+      &__title 
+        font-size: 26px
+        margin-bottom: 15px
+      &__text 
+        font-size: 18px
+      &__li 
+        margin-bottom: 10px
+        &::before
+          width: 14px
+          height: 14px
+
+@media ( max-width: 1024px )
+  .banner 
+    .wrap-fluid 
+      padding-top: 60px
+    &-bg 
+      top: -400px
+    &-bg-1 
+      top: -30px
+      width: 700px
+    &-bg-2 
+      top: -410px
+      left: -280px
+    &-bg-3 
+      width: 730px
+      top: -210px
+      right: -250px
+    &-bg-4 
+      width: 500px
+      top: -40px
+      right: -100px
+    &-arrow-1 
+      width: 150px
+      left: 85px
+      bottom: 60px
+
+    &-arrow-2
+      bottom: 40px
+      width: 130px
+      right: 105px
+    &-card 
+      margin-top: -40px
+      &__name 
+        span:nth-of-type(1)
+          font-size: 32px
+          margin-bottom: 13px
+
+        span:nth-of-type(2)
+          font-size: 16px
+          margin-bottom: 15px
+      &__block 
+        width: 340px
+        margin-top: -150px
+      &__bg 
+        width: 342px
+      &__img 
+        width: 340px
+
+    &-block 
+      width: 200px
+      .btn 
+        margin-top: 15px
+        width: max-content
+      &__icon 
+        width: 40px
+      &__title 
+        font-size: 24px
+        margin-bottom: 15px
+        width: 200px
+      &__text 
+        font-size: 16px
+        width: 220px
+      &__li 
+        margin-bottom: 10px
+        font-size: 14px
+        &::before
+          width: 14px
+          height: 14px
+
+@media  ( max-width: 960px  )
+  .banner 
+    &-bg 
+      top: -250px
+      left: -350px
+      width: 1800px
+
+
+    &-bg-2 
+      top: -406px
+      left: -340px
+    &-bg-3
+      right: -300px
+      top: -200px
+      width: 700px
+    &-bg-4 
+      right: -150px
+    &-arrow-1 
+      left: 115px
+    &-arrow-2 
+      right: 135px
+    &-card 
+      &__name 
+        span:nth-of-type(1)
+          font-size: 30px
+        span:nth-of-type(2)
+          font-size: 14px
+
+@media  ( max-width: 880px  )
+  .banner 
+    &-bg-2 
+      top: -406px
+      left: -340px
+    &-bg-3
+      right: -320px
+    &-bg-4 
+      right: -150px
+    &-arrow-1 
+      left: 140px
+      bottom: 50px
+      width: 110px
+    &-arrow-2 
+      width: 90px
+      right: 160px
+      bottom: 25px
+    &-card 
+      &__block 
+        width: 300px
+        margin-top: -150px
+      &__bg 
+        width: 302px
+      &__img 
+        width: 300px
+
+@media  ( max-width: 830px  )
+  .banner 
+    &-bg 
+      top: -270px
+    &-bg-2 
+      left: -370px
+    &-bg-3 
+      width: 670px
+      top: -170px
+      right: -280px
+    .wrap-fluid 
+      padding-top: 0
+    &-arrow-1 
+      left: 125px
+      bottom: 70px
+      width: 110px
+    &-arrow-2 
+      width: 90px
+      right: 145px
+      bottom: 55px
+    
+    &-block 
+      padding-top: 60px
+      &__icon 
+        top: 70px
+    &-card 
+      margin-top: 50px
+      &__logo 
+        width: 204px
+        left: calc(50% - 102px)
+        top: 15px
+        img:nth-of-type(1)
+          margin-right: 10px
+          width: 60px
+        img:nth-of-type(2)
+          width: 120px
+          margin-left: 5px
+        span 
+          font-size: 16px
+          font-family: 'Rotonda Bold'
+      &__img 
+        width: 280px
+      &__block 
+        width: 280px
+        margin-top: -110px
+
+      &__bg 
+        margin-left: 0
+        width: 280px
+
+@media ( max-width: 767px )
+  .banner
+    margin-bottom: 50px
+
+    &-bg 
+      top: -800px
+      left: -1600px
+      width: 4700px
+      &_mob 
+        position: absolute
+        top: 190px
+        left: -250px
+        width: 1200px
+        display: block
+        z-index: 1
+    &-bg-1 
+      display: none
+    &-bg-2 
+      width: 700px
+    &-bg-3 
+      width: 350px
+      top: -30px
+      right: -80px
+    &-bg-4 
+      width: 400px
+      top: 150px
+      left: -100px
+    &-arrow-1 
+      display: none
+    &-arrow-2 
+      display: none
+    .wrap-fluid 
+      display: flex
+      align-items: center
+      flex-direction: column
+    &-card 
+      display: none
+    &-mob 
+      display: block
+      padding-top: 350px
+      margin-bottom: 60px
+      &__img 
+        width: 300px
+        display: block
+        position: absolute
+        top: 30px
+        left: calc(50% - 150px)
+      &__buttons 
+        display: flex
+        justify-content: space-between
+        margin: auto
+        width: 310px
+        
+        .btn  
+          background-color: #fff
+          width: 150px
+          font-size: 18px
+          line-height: 24px
+          height: 70px
+          padding: 15px
+          border-radius: 15px
+          text-align: center
+      &__name 
+        width: 400px
+        span
+          color: #fff
+          display: block
+          text-align: center
+          font-family: 'Rotonda Bold'
+          font-weight: bold
+          &:nth-child(1)
+            font-size: 36px
+            margin-bottom: 10px
+          &:nth-child(2)
+            font-size: 18px
+            margin-bottom: 20px
+    &-logo 
+      display: block 
+      position: absolute
+      top: 10px 
+      left: 0px
+      display: flex
+      flex-direction: column
+      align-items: center
+      img:nth-child(1) 
+        width: 90px
+        margin-bottom: 5px
+      img:nth-child(2) 
+        width: 100px
+    &-block 
+      padding: 15px
+      background-color: #fff
+      box-shadow: 0px 0px 13.9936px rgba(118, 95, 67, 0.15)
+      border-radius: 25px
+      width: 400px
+      margin-bottom: 20px
+      &:last-of-type
+        margin-bottom: 0
+      .btn 
+        width: 100%
+        margin-top: 30px
+        margin-bottom: 5px
+      &__icon 
+        top: 15px
+        left: 15px
+        width: 35px
+      &__title 
+        padding-left: 50px
+        width: 100%
+        margin-bottom: 25px
+      &__text 
+        width: 100% 
+        margin-bottom: 20px
+        font-size: 18px
+      &__li 
+        font-size: 18px
+
+@media ( max-width: 600px )
+  .banner 
+    &-bg
+      top: -1000px
+      left: -1700px
+      &_mob 
+        width: 800px
+        left: -180px
+    &-bg-3 
+      width: 300px
+    &-bg-4 
+      width: 330px
+    &-block 
+      width: 100%
+      &__title 
+        font-size: 20px
+      &__text 
+        font-size: 16px
+      &__li 
+        font-size: 16px
+      .btn 
+        margin-top: 20px
+
+    &-mob 
+      padding-top: 300px
+      margin-bottom: 50px
+      &__img 
+        width: 280px
+        left: calc(50% - 140px)
+      &__buttons 
+        .btn
+          font-size: 16px 
+      &__name 
+        width: 400px
+        span
+          &:nth-child(1)
+            font-size: 28px
+            margin-bottom: 10px
+          &:nth-child(2)
+            font-size: 16px
+            margin-bottom: 20px
+
+@media ( max-width: 425px )
+  .banner 
+    &-bg-2
+      left: -380px
+      top: -330px
+      width: 600px
+    &-bg-3 
+      width: 200px
+

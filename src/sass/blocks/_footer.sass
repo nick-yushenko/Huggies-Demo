@@ -1,0 +1,211 @@
+.footer 
+  position: absolute
+  bottom: 0 
+  left: 0 
+  width: 100%
+  background-image: url('../img/footer/footer-bg.svg')
+  background-repeat: no-repeat
+  background-size: 3000px
+  background-position-y: 80px
+  background-position-x: -850px
+  padding-top: 190px
+  z-index: 15
+  &-block 
+    .wrap-fluid 
+      display: flex
+      justify-content: space-between
+      align-items: flex-start
+
+    &__item 
+      width: 25%
+      span 
+        font-size: 40px
+        display: block
+        margin-bottom: 25px
+        font-family: 'Rotonda Bold'
+      .btn 
+        width: 270px
+        text-align: center
+    &__img 
+      margin-top: -180px
+      width: 500px
+      transform: scale(1.1)
+      img 
+        width: 100%
+        position: relative
+    
+
+  &-nav 
+    margin-bottom: 35px
+    margin-top: 30px
+    .wrap-fluid
+      display: flex
+      justify-content: space-between
+      align-items: center 
+    &__item 
+      color: $primary
+      font-size: 16px
+      margin-right: 50px
+      cursor: pointer
+      &:last-child
+        margin-right: 0
+    &__social
+      display: flex
+      align-items: center
+      justify-content: flex-end
+      .img
+        margin-left: 15px
+        width: 40px
+        background-color: $primary
+        height: 40px
+        display: flex
+        align-items: center 
+        justify-content: center 
+        border: 1px solid $primary
+        border-radius: 50%
+        &:first-child
+          margin-left: 0
+
+  &-text 
+    margin-bottom: 30px
+    p 
+      font-size: 10px
+      font-family: 'Rotonda Regular'
+      line-height: 12px
+      opacity: 0.5
+      margin-bottom: 10px
+
+
+@media ( max-width: 1260px )
+  .footer 
+    background-image: url('../img/footer/footer-bg.svg')
+    background-repeat: no-repeat
+    background-size: 3000px
+    background-position-y: 80px
+    background-position-x: -1000px
+    &-block 
+      .wrap-fluid 
+        justify-content: space-between
+      &__img 
+        width: 360px
+        margin-top: -140px
+      &__item 
+        .btn 
+          width: 240px
+        span 
+          font-size: 30px
+
+@media ( max-width: 1040px )
+  .footer 
+    &-block 
+      &__img 
+        width: 310px
+        margin-top: -130px
+      &__item 
+        width: 200px
+        .btn 
+          width: max-content
+        span 
+          font-size: 22px
+
+@media ( max-width: 1024px )
+  .footer 
+
+    &-nav 
+      margin-bottom: 15px
+      &__item 
+        font-size: 14px
+        margin-right: 30px
+      &__social
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        .img
+          margin-left: 10px
+          width: 30px
+          height: 30px
+          img 
+            width: 60%
+          &:nth-child(3)
+            img 
+              width: 45%
+
+@media ( max-width: 860px )
+  .footer 
+    background-image: url('../img/footer/footer-bg.svg')
+    background-repeat: no-repeat
+    background-size: 2000px
+    background-position-y: 80px
+    background-position-x: -450px
+    &-block 
+      &__img 
+        width: 280px
+    &-nav 
+      &__item 
+        font-size: 12px
+        margin-right: 20px
+
+
+@media ( max-width: 767px )
+  .footer 
+    position: static
+    padding-bottom: 30px
+    padding-top: 50px
+    background-image: url('../img/footer/footer-bg.svg')
+    background-repeat: no-repeat
+    background-size: 2500px
+    background-position-y: 0px
+    background-position-x: -950px
+    &-block 
+
+      .wrap-fluid
+        display: flex 
+        flex-direction: column 
+        align-items: center
+
+      &__img 
+        margin: 10px 0
+        margin-top: 20px
+      &__item 
+        width: 100%
+        span 
+          display: block 
+          text-align: center
+        .btn 
+          margin: 0 auto
+
+    &-nav 
+      .wrap-fluid 
+        display: flex
+        flex-direction: column 
+        align-items: center
+      &__nav 
+        margin-bottom: 15px
+        display: flex
+        flex-wrap: wrap
+
+
+  
+
+@media ( max-width: 600px )
+  .footer 
+    // background-image: url('../img/footer/footer-bg.svg')
+    // background-repeat: no-repeat
+    // background-size: 2500px
+    // background-position-y: -150px
+    // background-position-x: -50px
+    &-nav 
+      &__nav 
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-bottom: 0
+      &__item 
+        margin-bottom: 10px
+
+
+@media ( max-width: 425px )
+  .footer 
+    &-block 
+      &__item 
+        width: 300px

@@ -1,0 +1,284 @@
+.catalog 
+  position: relative
+  z-index: 5
+  &-more 
+    display: none
+  &-bg 
+    display: none
+  &-title 
+    display: none
+  &-nav 
+    display: flex
+    align-items: center 
+    justify-content: space-between
+    margin-bottom: 20px
+    .btn 
+      padding: 0
+      width: 210px
+  &-sort 
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    &__item 
+      padding: 5px 13px
+      font-family: 'Rotonda Regular'
+      font-size: 16px
+      cursor: pointer
+      border-radius: 20px
+      margin-right: 10px
+      transition: 0.3s
+      border: 1px solid transparent
+      &:last-child
+        margin-right: 0
+      &.current 
+        color: $primary 
+        background-color: transparent !important 
+        border: 1px solid $primary !important
+    
+        font-family: 'Rotonda Bold'
+        font-weight: bold
+      &.option 
+        background-color: rgba($primary, 0.12) 
+        border: 1px solid transparent !important
+
+  &-wrap 
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap 
+
+  &-item 
+    background-color: #fff
+    box-shadow: 0px 0px 31px rgba(118, 95, 67, 0.15)
+    border-radius: 20px
+    position: relative
+    width: 280px
+    padding-bottom: 20px
+    margin-bottom: 40px
+
+
+    &__img 
+      width: 100%
+      height: 180px
+      object-fit: cover
+      object-position: center
+      border-radius: 20px
+      margin-bottom: 20px
+    &__title 
+      padding: 0 20px
+      font-family: 'Rotonda Bold'
+      font-weight: bold
+      font-size: 18px
+      margin-bottom: 5px
+    &__author 
+      padding: 0 20px
+      display: block
+      width: 100%
+      color: $text-light 
+      font-size: 14px
+      font-family: 'Rotonda Regular'
+      
+    &__buttons 
+      display: flex
+      margin-top: 30px
+      padding: 0 20px
+      justify-content: space-between
+
+      .btn 
+        padding: 0px 15px
+        height: 25px
+        line-height: 25px
+        display: flex
+        align-items: center
+        
+
+    &__like
+      position: absolute
+      top: 15px 
+      right: 15px
+      color: #fff
+      background-color: $primary
+      padding: 5px 10px
+      border-radius: 10px
+      cursor: pointer
+@media ( min-width: 992px )
+  .catalog
+    &-sort 
+      &__item:hover 
+        transition: 0.3s
+        border: 1px solid $text
+
+@media ( max-width: 1100px )
+  .catalog
+    
+    &-nav 
+      .btn 
+        font-size: 14px
+    &-sort
+      flex-wrap: wrap
+      &__item 
+        margin-right: 15px 
+        font-size: 14px
+        padding: 5px 9px 
+        margin-bottom: 10px
+
+@media ( max-width: 1024px )
+  .catalog
+    &-nav 
+      align-items: flex-start
+      .btn 
+        width: 185px 
+        min-width: 185px
+    &-sort
+      &__item 
+        font-size: 16px
+    &-item 
+      width: 240px
+      border-radius: 15px
+      padding-bottom: 15px
+      &__img 
+        border-radius: 15px
+      &__buttons 
+        padding: 0 15px
+        margin-top: 20px
+        display: flex
+        flex-direction: column
+        .btn 
+          margin-bottom: 10px
+          width: 100%
+          font-size: 14px
+          height: 30px
+          &:last-child
+            margin-bottom: 0
+@media ( max-width: 860px )
+  .catalog
+    &-wrap 
+      justify-content: space-around
+    &-item 
+      width: 208px
+@media ( max-width: 768px )
+  .catalog
+    &-sort
+      &__item 
+        font-size: 14px
+   
+    &-item 
+      margin-right: 5px
+      margin-left: 5px
+      margin-bottom: 15px
+      &__img 
+        margin-bottom: 15px
+      &__title 
+        padding: 0 15px
+        font-size: 14px
+      &__author
+        padding: 0 15px
+      &__like 
+        top: 10px
+        right: 10px
+        font-size: 14px
+        display: flex
+        align-items: center
+        img 
+          width: 10px
+          margin-bottom: 0
+          margin-left: 5px
+
+@media ( max-width: 730px )
+  .catalog 
+    &-nav 
+      .btn 
+        display: none
+    &-sort 
+      &__item 
+        margin-right: 10px
+    &-item
+      width: 48%
+      margin-right: 0
+
+@media ( max-width: 660px )
+  .catalog
+    &-title 
+      display: block
+      color: $primary
+      margin-bottom: 30px
+      font-size: 22px
+      text-align: center 
+
+@media ( max-width: 600px )
+  .catalog 
+    &-more 
+      display: flex
+      margin: auto
+      width: 200px
+      margin-top: 30px
+    &-wrap 
+      position: relative
+    &-bg 
+      display: block 
+      position: absolute
+      top: 450px
+      left: -500px
+      width: 2000px
+      transform: rotate(50deg)
+
+
+@media ( max-width: 515px )
+  .catalog 
+    &-wrap 
+      justify-content: space-between
+    &-item
+      border-radius: 8px 
+      &__img 
+        height: 160px
+        border-radius: 8px
+      &__title 
+        padding: 0 7px
+      &__author
+        padding: 0 7px
+      &__buttons 
+        padding: 0 7px
+        margin-top: 10px
+
+@media ( max-width: 450px )
+  .catalog 
+    &-item
+      margin-bottom: 10px
+
+
+@media ( max-width: 425px )
+  .catalog 
+    &-bg 
+      display: block 
+      position: absolute
+      top: 150px
+      left: -400px
+      width: 1000px
+      height: auto
+      transform: rotate(40deg)
+
+    &-nav 
+      margin-bottom: 15px
+    &-sort 
+      &__item 
+        margin-top: 5px
+        margin-bottom: 0
+        padding: 4px
+    &-item
+      &__like 
+        display: flex
+        align-items: center
+
+
+
+@media ( max-width: 375px )
+  .catalog 
+    &-wrap 
+      justify-content: space-around
+    &-sort 
+      &__item 
+        margin-right: 5px
+    &-item
+      width: 250px
+      border-radius: 15px
+      &__img 
+        border-radius: 15px

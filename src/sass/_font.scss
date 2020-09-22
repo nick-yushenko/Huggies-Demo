@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'Rotonda Bold';
+  src: url('../fonts/RotonBold.eot');
+  src: url('../fonts/RotonBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/RotonBold.woff') format('woff'),
+    url('../fonts/RotonBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'Rotonda Regular';
+  src: url('../fonts/RotonReg.eot');
+  src: url('../fonts/RotonReg.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/RotonReg.woff') format('woff'),
+    url('../fonts/RotonReg.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}

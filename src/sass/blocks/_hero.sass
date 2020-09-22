@@ -1,0 +1,401 @@
+
+
+.hero 
+  position: relative
+  padding-top: 30px
+  min-height: 650px
+  overflow: hidden
+  &-bg 
+    position: absolute
+    top: -360px
+    left: -230px
+    z-index: 1
+    img 
+      width: 100%
+      height: 100%
+  &-bg-1 
+    position: absolute
+    z-index: 1
+    bottom: 50px
+    left: calc(50% - 250px)
+    width: 700px
+  &-bg-2 
+    position: absolute
+    z-index: 1
+    top: -240px
+    right: -200px
+  &-bg-3 
+    position: absolute
+    bottom: 120px 
+    left: calc(50% - 400px)
+    z-index: 1
+  &-bg-4
+    position: absolute
+    z-index: 1
+    top: -300px 
+    right: -170px
+  &-mask 
+    position: absolute
+    bottom: -140px
+    left: -460px
+    z-index: 3
+    width: max-content
+    // opacity: 0.5
+  &-img 
+    z-index: 1
+    margin-top: 40px    
+
+  .wrap-fluid 
+    display: flex
+    z-index: 2
+    align-items: flex-start
+    justify-content: space-between
+
+  &-block 
+    width: max-content !important
+    z-index: 4
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    &:nth-child(1)
+      align-items: flex-start
+    &__logo 
+      width: max-content
+      margin-bottom: 55px
+      display: flex
+      align-items: center
+      img 
+        &:first-child
+          width: 90px
+          margin-right: 10px
+        &:last-child
+          width: 165px
+          margin-left: 5px
+ 
+  &-count 
+    width: max-content
+    margin-left: auto
+    display: flex
+    flex-direction: column
+    align-items: center 
+    .count 
+      background-color: $primary 
+      width: 140px
+      height: 140px
+      border-radius: 500px
+      max-width: max-content
+      min-width: 140px
+      display: flex
+      align-items: center
+      justify-content: center 
+      flex-direction: column 
+      margin-bottom: 10px
+      & > span 
+        color: #fff
+        font-family: 'Rotonda Bold'
+        font-weight: bold
+        &:nth-child(1)
+          font-size: 53px
+        &:nth-child(2)
+          font-size: 18px
+
+    & > span 
+      font-family: 'Rotonda Regular'
+      font-size: 23px
+      width: 150px
+      display: block
+      text-align: center  
+
+
+  &-name 
+    width: 260px
+    margin-bottom: 55px
+    span
+      font-size: 15px
+      font-family: 'Rotonda Bold'
+      font-weight: bold
+      &:first-child
+        font-size: 30px
+        color: $primary
+        font-weight: 700
+
+  &-title 
+    max-width: 400px
+    font-family: 'Rotonda Bold'
+    font-weight: bold
+    font-size: 44px
+    color: $primary
+
+@media ( max-width: 1400px )
+  .hero 
+    &-mask 
+      position: absolute
+      bottom: -130px
+      left: -500px
+      z-index: 3
+
+@media ( max-width: 1100px )
+  .hero 
+    &-bg-1 
+      width: 600px
+    &-bg-2
+      top: -170px
+      right: -250px
+      width: 1000px
+    &-bg-4 
+      right: -200px
+    &-title 
+      font-size: 32px
+    &-img 
+      width: 300px
+      margin-top: 130px
+      img 
+        width: 100%
+    &-count 
+
+      .count 
+        width: 120px
+        height: 120px
+        min-width: 120px
+        & > span 
+          &:nth-child(1)
+            font-size: 45px
+          &:nth-child(2)
+            font-size: 16px
+      &> span 
+        font-size: 18px
+
+@media ( max-width: 1024px )
+  .hero 
+    min-height: 600px
+    margin-bottom: -100px
+    &-block 
+      &__logo 
+        margin-bottom: 70px
+    &-bg 
+      top: -440px
+      left: -630px
+    &-mask 
+      bottom: -60px
+      left: -850px
+    &-bg-1
+      bottom: 120px
+    &-bg-2 
+      right: -410px
+      top: -300px
+    &-img 
+      margin-top: 75px
+      width: 280px 
+      min-width: 280px
+    &-title 
+      font-size: 28px
+
+@media ( max-width: 960px )
+  .hero 
+    min-height: 600px
+    margin-bottom: -50px
+    &-name 
+      width: 260px
+      margin-bottom: 115px
+      span
+        font-size: 12px
+        &:first-child
+          font-size: 24px
+    &-block 
+      &__logo 
+        margin-bottom: 70px
+    &-bg 
+      top: -360px
+      left: -630px
+    &-mask 
+      bottom: -130px
+      left: -850px
+    &-bg-1
+      bottom: 60px
+    &-bg-2 
+      right: -410px
+      top: -300px
+    &-img 
+      position: absolute
+      top: 120px 
+      left: 270px
+      margin-top: 0
+      width: 300px 
+      min-width: 300px
+      img
+        width: 300px
+      
+    &-title 
+      font-size: 24px
+      width: 260px
+
+@media ( max-width: 800px)
+  .hero 
+    &-bg-2 
+      top: -200px
+    &-bg-4 
+      top: -320px
+      right: -320px
+    &-img 
+      left: 230px
+
+@media ( max-width: 760px )
+  .hero 
+    margin-bottom: -90px
+    &-mask
+      left: -1000px
+      bottom: -150px
+      width: 3300px
+    &-bg-4 
+      display: none
+    &-bg-2 
+      top: -50px
+      right: -40px
+      width: 900px
+    &-bg-3 
+      
+      width: 600px
+    &-img 
+      top: 135px
+      width: 260px
+      min-width: 260px
+      img
+        width: 100%
+
+@media ( max-width: 660px )
+  .hero
+    &-bg-1 
+      width: 500px
+      left: 120px
+    &-bg-2
+      top: 170px
+      width: 600px
+    &-bg-3 
+      left: 50px
+      width: 500px
+    &-title 
+      display: none
+    &-img 
+      left: 250px
+    &-count 
+      position: absolute
+      top: 150px
+      left: 30px
+    &-block 
+      &__logo 
+        margin-bottom: 0 
+        display: flex
+        flex-direction: column
+        span 
+          display: none
+        img 
+          &:first-child
+            margin: 0
+            margin-bottom: 10px
+            width: 90px
+          &:last-child
+            margin: 0
+            width: 100px
+
+@media ( max-width: 600px )
+  .hero 
+    &-img 
+      top: 160px
+      width: 240px
+      min-width: 240px
+      left: 230px
+    &-count 
+      .count 
+        width: 100px
+        height: 100px
+        min-width: 100px
+        & > span 
+          &:nth-child(1)
+            font-size: 30px
+          &:nth-child(2)
+            font-size: 14px
+      &> span 
+        display: block
+        width: 100px
+        font-size: 14px
+
+
+@media ( max-width: 500px )
+  .hero 
+    margin-bottom: -150px
+    &-bg 
+      top: -440px
+    &-bg-1 
+      bottom: 180px
+      width: 300px
+    &-bg-2 
+      top: 50px
+      left: -80px
+    &-bg-3 
+      bottom: 190px
+      left: -30px
+      width: 400px
+    &-mask 
+      bottom: -90px
+      left: -1150px
+    &-img 
+      top: 100px
+      width: 240px
+      min-width: 240px
+      left: 170px
+
+
+@media ( max-width: 450px )
+  .hero 
+    &-bg-1 
+      left: 20%
+    &-bg-2 
+      top: 80px
+    &-img 
+      top: 125px
+      width: 220px
+      min-width: 220px
+      left: 130px
+    &-count 
+      left: 5px
+      .count 
+        width: 85px
+        height: 85px
+        min-width: 85px
+        & > span 
+          &:nth-child(1)
+            font-size: 24px
+          &:nth-child(2)
+            font-size: 12px
+      &> span 
+        display: block
+        width: 100px
+        font-size: 14px
+
+@media ( max-width: 425px )
+  .hero
+    &-bg 
+      display: block
+    &-mask 
+      display: block
+    &-name 
+      width: 180px
+      margin-bottom: 115px
+      span
+        font-size: 12px
+        &:first-child
+          font-size: 18px
+          margin-bottom: 5px
+          display: block
+
+@media ( max-width: 375px )
+  
+  .hero 
+    &-bg-1 
+      left: 50px
+      width: 270px
+    &-img 
+      top: 140px
+      width: 210px
+      min-width: 210px
+      left: 90px

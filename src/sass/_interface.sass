@@ -1,0 +1,264 @@
+* 
+  outline: none  !important
+  margin: 0
+  padding: 0
+  color: $text
+  font-family: 'Rotonda Regular'
+  box-sizing: border-box
+  outline: 0 !important
+  outline-offset: 0 !important
+  transition: 0 !important
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+
+@media screen and ( min-width: 768px  )
+  *
+    scrollbar-color: $primary $primary-light 
+    scrollbar-width: thin 
+  ::-webkit-scrollbar 
+    width: 5px 
+    height: 5px 
+    background-color: $primary-light
+  ::-webkit-scrollbar-thumb 
+    background-color: $primary
+    border-radius: 10px
+body 
+  position: relative
+  overflow-x: hidden
+  background-color: #F9F8F8
+.main 
+  padding-top: 70px
+  padding-bottom: 470px
+  position: relative
+  overflow: hidden
+@media ( max-width: 1260px )
+  .main 
+    padding-bottom: 370px
+
+@media ( max-width: 767px )
+  .main 
+    padding-top: 90px
+    padding-bottom: 0
+    display: flex
+    flex-direction: column
+.primary 
+  color: $primary
+
+.br 
+  display: block
+  line-height: 0
+  height: 0
+a 
+  text-decoration: none
+
+.btn 
+  padding: 15px 20px
+  border: 2px solid $primary
+  font-family: 'Rotonda Bold'
+  font-weight: bold
+  height: 50px
+  border-radius: 40px
+  display: flex
+  align-items: center
+  justify-content: center
+  width: max-content
+  color: $primary
+  font-size: 16px
+  transition: 0.3s 
+  background-color: transparent
+  cursor: pointer
+  span 
+    color: $primary
+    font-size: 24px
+    font-family: 'Rotonda Bold'
+    font-weight: bold
+    display: block
+    margin-top: -4px
+    margin-right: 8px
+  &-primary 
+    color: #ffffff
+    background-color: $primary
+  &-white 
+    color: $primary !important
+    background-color: #fff !important
+    border-color: #fff 
+
+.input 
+  span
+    display: block
+    margin-bottom: 10px 
+    font-size: 16px 
+    font-family: 'Rotonda Regular'
+    padding: 0 20px
+  input 
+    border-radius: 50px
+    border: none 
+    outline: none 
+    height: 50px
+    padding: 0 20px
+    background-color: #FFEFE1
+    width: 100%
+    font-size: 16px
+input[type="submit"]
+  height: 50px
+  background-color: $primary
+  text-align: center
+  border: none 
+  cursor: pointer
+  border-radius: 50px
+  color: #ffffff
+  font-family: 'Rotonda Bold'
+  font-weight: bold
+  font-size: 16px
+
+input[type="date"]
+  &::-webkit-calendar-picker-indicator 
+    color: rgba(0, 0, 0, 0)
+    opacity: 1
+    cursor: pointer
+    display: block
+    background: url('../img/icons/calendar-icon.svg') no-repeat
+    background-position-y: 3px 
+    width: 20px
+    height: 20px
+    border-width: thin
+
+
+
+
+
+
+.checkbox 
+  position: relative
+  // .invalid ~ .checkbox__text
+  //   margin-bottom: 15px
+  // .valid ~ .checkbox__text
+  //   margin-bottom: 0px !important
+  div.invalid 
+    top: 35px
+  input 
+    position: absolute
+    z-index: -1
+    opacity: 0
+    width: 28px
+    height: 28px
+    &:checked
+      
+      & ~ .checkbox__text::before 
+        background-color: #fff !important
+        background-image: url('../img/icons/checkbox-icon.svg')
+        background-repeat: no-repeat
+        background-position: center 
+        transform-origin: center
+  
+  &__text 
+    display: block
+    position: relative
+    padding: 5px 0 0 34px
+    cursor: pointer
+    line-height: 12px
+    color: #989A9C
+    font-weight: 300
+    font-family: 'Rotonda Regular'
+    font-weight: normal
+    font-size: 12px
+    span 
+      color: #989A9C
+      text-decoration: underline
+    &::before 
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 21px
+      height: 21px
+      border-radius: 5px
+      border: 1px solid #989A9C
+      background-color: #fff
+      transition: .2s
+      background-position: center 
+      transform-origin: center
+
+@media ( max-width: 600px )
+  .input 
+    span 
+      font-size: 14px
+      margin-bottom: 7px
+      padding: 0 15px
+    input 
+      padding: 0 15px
+      height: 35px
+      font-size: 14px
+  input[type="submit"]
+    height: 35px
+
+
+@media ( max-width: 1040px )
+  .btn 
+    line-height: 16px
+    padding: 10px 15px
+    height: 35px
+    span 
+      font-size: 20px
+      margin-top: -4px
+
+
+
+@media ( max-width: 800px )
+  .btn 
+    padding: 10px
+@media ( min-width: 992px )
+  .btn:hover 
+    transition: 0.3s
+    background-color: $primary 
+    color: #ffffff 
+    span 
+      transition: 0.3s
+      color: #ffffff  
+  a 
+    transition: 0.3s
+    &:hover 
+      color: $primary
+      transition: 0.3s
+
+
+.wrap
+  margin: 0 auto
+  width: 820px
+  &-fluid
+    margin: 0 auto 
+    width: 1180px
+
+@media ( max-width: 1260px )
+  .wrap 
+    &-fluid 
+      width: 1024px
+
+@media ( max-width: 1100px )
+  .wrap 
+    &-fluid 
+      width: 960px
+
+
+@media ( max-width: 1024px )
+  .wrap 
+    width: 760px
+    &-fluid 
+      width: 800px
+
+
+@media ( max-width: 960px )
+  .wrap 
+    width: 700px
+    &-fluid 
+      width: 90%
+
+
+@media ( max-width: 768px )
+  .wrap 
+    width: 650px
+
+@media ( max-width: 600px )
+  .wrap 
+    width: 100%
+    &-fluid
+      width: 95% 
